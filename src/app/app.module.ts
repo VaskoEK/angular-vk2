@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WeathermapComponent } from './feature/weathermap/weathermap.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapComponent } from './feature/map/map.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MapComponent } from './feature/map/map.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
